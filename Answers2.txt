@@ -1,0 +1,38 @@
+1,  <points x1="11.1" y1="81.2" x2="27.7" y2="74.2" x3="39.2" y3="82.9" x4="40.7" y4="55.9" x5="42.1" y5="69.2" alt="stadiums">stadiums</points>
+2,  There are none.
+3,  There are none.
+4,  <points x1="38.0" y1="75.2" x2="47.7" y2="75.7" x3="57.3" y3="74.9" alt="stadiums">stadiums</points>
+5,  There are none.
+6,  There are none.
+7,  There are none.
+8,  There are none.
+9,  There are none.
+10,  There are none.
+11,  There are none.
+12,  <points x1="16.7" y1="29.0" x2="17.2" y2="20.0" alt="stadiums">stadiums</points>
+13,  There are none.
+14,  There are none.
+15,  There are none.
+16,  There are none.
+17,  There are none.
+18,  There are none.
+19,  There are none.
+20,  <points x1="69.9" y1="29.0" x2="72.1" y2="16.0" x3="91.1" y3="14.1" alt="stadiums">stadiums</points>
+21,  <points x1="38.3" y1="49.0" x2="38.3" y2="52.0" x3="38.3" y3="54.3" x4="38.5" y4="45.7" x5="42.3" y5="45.7" x6="42.3" y6="47.8" x7="42.3" y7="50.3" x8="42.3" y8="52.7" alt="stadiums.">stadiums.</points>
+22,  There are none.
+23,  There are none.
+24,  There are none.
+25,  There are none.
+26,  There are none.
+27,  <points x1="16.7" y1="20.7" x2="27.9" y2="2.3" x3="28.1" y3="11.7" x4="36.5" y4="73.0" x5="39.5" y5="16.3" alt="stadiums">stadiums</points>
+28,  There are none.
+29,  There are none.
+30,  There are none.
+31,  There are none.
+32,  There are none.
+33,  There are none.
+34,  There are none.
+35,  There are none.
+36,  There are none.
+37,  There are none.
+38,  There are none.
