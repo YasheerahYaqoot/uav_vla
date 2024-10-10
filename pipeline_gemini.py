@@ -1,14 +1,29 @@
 from langchain.prompts import PromptTemplate
-from langchain_openai import ChatOpenAI
+#from langchain_openai import ChatOpenAI
 import json
+
+from langchain_google_genai import GoogleGenerativeAI
+
+from getpass import getpass
+
+api_key = getpass()
+
+
+
+llm = GoogleGenerativeAI(model="models/text-bison-001", google_api_key=api_key)
+print(
+    llm.invoke(
+        "What are some of the pros and cons of Python as a programming language?"
+    )
+)
+
+
 #import molmo_inference
 # Initialize the ChatGPT-4 model using ChatOpenAI
 
 
-command = """Create a flight plan and mission through a mavproxy framework for the quadcopter to fly around each of the buildings, circle over the stadium and land at the take-off point."""
+command = """Create a flight plan and mission through a mavproxy framework for the quadcopter to fly around each of the villages, circle over the airfield and land at the take-off point."""
 # 1. Step 1: Extract object types from the user's input command using the LLM
-
-
 step_1_template = """
 Extract all types of objects the drone needs to find from the following mission description:
 "{command}"
@@ -26,15 +41,13 @@ step_1_prompt = PromptTemplate(input_variables=["command"], template=step_1_temp
 # Instead of using RunnableSequence, we simply use pipe (|)
 step_1_chain = step_1_prompt | llm
 
-print(step_1_chain)
-
 # 2. Step 2: Use SAM model to find objects on the map (placeholder)
 def find_objects(json_input):
     """
     Placeholder for SAM model to process input object types and output valid objects.
     For now, return a dummy dictionary of identified objects.
     """
-    #object_types = json.loads(json_input)["object_types"]
+    object_types = json.loads(json_input)["object_types"]
     # Dummy dictionary of found objects
     objects = {
         "village_1": {"type": "village", "coordinates": [55.123, 37.456]},
@@ -71,20 +84,15 @@ step_3_chain = step_3_prompt | llm
 def generate_drone_mission(command):
     # Step 1: Extract object types
     object_types_response = step_1_chain.invoke({"command": command})
-    print('object_types_response =', object_types_response)
     
     # Extract the text from the AIMessage object
     object_types_json = object_types_response.content  # Use 'content' to get the actual response text
-    print('object_types_json =', object_types_json)
-
+    
     # Step 2: Find objects on the map (dummy example for now)
     objects_json = find_objects(object_types_json)
-    print('objects_json =', objects_json)
-
     
     # Step 3: Generate the flight plan
     flight_plan_response = step_3_chain.invoke({"command": command, "objects": objects_json})
-    print('flight_plan_response = ', flight_plan_response)
     
     return flight_plan_response.content  # Return the response text from AIMessage
 
