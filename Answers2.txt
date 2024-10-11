@@ -1,0 +1,10 @@
+1,  <points x1="11.1" y1="81.2" x2="27.7" y2="74.2" x3="39.2" y3="82.9" x4="40.7" y4="55.9" x5="42.1" y5="69.2" alt="stadiums">stadiums</points>
+2,  There are none.
+3,  There are none.
+4,  <points x1="38.0" y1="75.2" x2="47.7" y2="75.7" x3="57.3" y3="74.9" alt="stadiums">stadiums</points>
+5,  There are none.
+6,  There are none.
+7,  There are none.
+8,  There are none.
+9,  There are none.
+10,  There are none.
