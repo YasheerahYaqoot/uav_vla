@@ -18,6 +18,7 @@ processor = AutoProcessor.from_pretrained(
     device_map='auto'
 )
 
+print('here1')
 # load the model
 model = AutoModelForCausalLM.from_pretrained(
     'cyan2k/molmo-7B-O-bnb-4bit',
@@ -26,7 +27,7 @@ model = AutoModelForCausalLM.from_pretrained(
     device_map='auto'
 )
 
-
+print('here2')
 # process the image and text
 # inputs = processor.process(
 #     images=[Image.open(requests.get("https://www.zerogravity.fi/wp-content/uploads/2019/11/satellite-data-e1572891876593-621x556.jpg", stream=True).raw)],

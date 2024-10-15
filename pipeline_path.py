@@ -7,15 +7,21 @@ import requests
 import torch
 import os
 import re
+from parser_for_coordinates import parse_points
+
+from recalculate_to_latlon import recalculate_coordinates, percentage_to_lat_lon, read_coordinates_from_csv
+
+#os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 
 
 #import molmo_inference
 # Initialize the ChatGPT-4 model using ChatOpenAI
-llm = ChatOpenAI(api_key='
+
+print(torch.cuda.is_available())
 
 LIST_OF_ANSWERS = []
 
-NUMBER_OF_SAMPLES = 2 #len(os.listdir('/VLM_Drone/dataset_images'))
+NUMBER_OF_SAMPLES = 4 #len(os.listdir('/VLM_Drone/dataset_images'))
 print('NUMBER_OF_SAMPLES',NUMBER_OF_SAMPLES)
 
 # load the processor
@@ -58,38 +64,41 @@ print(step_1_chain)
 
 example_objects = '''
 {
-        "village_1": {"type": "village", "coordinates": [x1, y1]},
-        "village_2": {"type": "village", "coordinates": [x2, x2]},
-        "airfield": {"type": "airfield", "coordinates": [x3, x3]}
+        "village_1": {"type": "village", "coordinates": [1.5, 3.5]},
+        "village_2": {"type": "village", "coordinates": [2.5, 6.0]},
+        "airfield": {"type": "airfield", "coordinates": [8.0, 6.5]}
     }
 '''
 
 
-# 2. Step 2: Use SAM model to find objects on the map (placeholder)
+# 2. Step 2: Use Molmo model to find objects on the map (placeholder)
 def find_objects(json_input, example_objects):
     """
     Placeholder for SAM model to process input object types and output valid objects.
     For now, return a dummy dictionary of identified objects.
     """
-    #find_objects_json_input = re.findall('{.*}',json_input)[0]
-    #find_objects_json_input = json_output[9::-3]
+    search_string = str()
+    find_objects_json_input = json_input.replace("`", "").replace("json","")    #[9::-3]
+    
+    find_objects_json_input_2 = json.loads(find_objects_json_input)
 
+    for i in range(0,len(find_objects_json_input_2["object_types"])):
+        #print(find_objects_json_input_2["object_types"][i]) #Show in console the type of an object
+        sample = find_objects_json_input_2["object_types"][i]
+        search_string = search_string + sample + ", "
 
-    print('find_objects_json_input=', find_objects_json_input)
+    # What are we looking for?
+    print(search_string)
 
-
-    for i in range(1, NUMBER_OF_SAMPLES):
+    for i in range(3, NUMBER_OF_SAMPLES):
         print(i)
         string = '/dataset_images/' + str(i) + '.jpg' 
     #process the image and text
         inputs = processor.process(
             images=[Image.open('dataset_images/' + str(i) + '.jpg')],
             text=f'''
-            This is the satellite image of a city. Please, point all the {objects_json}. 
-            Give me the answer in a json format. Example: {example_objects}"
+            This is the satellite image of a city. Please, point all the {search_string}. 
             '''
-        
-
         )
 
         
@@ -106,21 +115,6 @@ def find_objects(json_input, example_objects):
             tokenizer=processor.tokenizer
         )
 
-        # with torch.autocast(device_type="cuda", enabled=True, dtype=torch.bfloat16):
-        #   output = model.generate_from_batch(
-        #       inputs,
-        #       GenerationConfig(max_new_tokens=200, stop_strings="<|endoftext|>"),
-        #       tokenizer=processor.tokenizer
-        #   )
-
-        # model.to(dtype=torch.bfloat16)
-        # inputs["images"] = inputs["images"].to(torch.bfloat16)
-        # output = model.generate_from_batch(
-        #     inputs,
-        #     GenerationConfig(max_new_tokens=200, stop_strings="<|endoftext|>"),
-        #     tokenizer=processor.tokenizer
-        # )
-
         # only get generated tokens; decode them to text
         generated_tokens = output[0,inputs['input_ids'].size(1):]
         generated_text = processor.tokenizer.decode(generated_tokens, skip_special_tokens=True)
@@ -128,51 +122,40 @@ def find_objects(json_input, example_objects):
         # print the generated text
         print('molmo_output =', generated_text)
 
-        #f.write(str(i) + ', ' + generated_text + '\n')
-        
-        # LIST_OF_ANSWERS.append(generated_text)
-        
-        # # LIST_OF_ANSWERS.append('/n')
+        parsed_points = parse_points(generated_text)
 
-        # f.writelines(LIST_OF_ANSWERS)
-        # # f.writelines(generated_text)
-        # f.write('\n')
-        # f.close()
+        image_number = i
+
+        csv_file_path = 'parsed_coordinates.csv'
+        coordinates_dict = read_coordinates_from_csv(csv_file_path)
+
+        result_coordinates = recalculate_coordinates(parsed_points, image_number, coordinates_dict)
 
 
+        print(result_coordinates)
 
     #object_types = json.loads(json_input)["object_types"]
-    # Dummy dictionary of found objects
-    
-    
-    objects = {
-    }
-    
-    '''
-        "village_1": {"type": "village", "coordinates": [55.123, 37.456]},
-        "village_2": {"type": "village", "coordinates": [55.789, 37.987]},
-        "airfield": {"type": "airfield", "coordinates": [55.234, 37.654]}
-    }
-    '''
-    
-    return json.dumps(objects)
+
+    return json.dumps(result_coordinates)
 
 # 3. Step 3: Generate flight plan using LLM and identified objects
 step_3_template = """
 Given the mission description: "{command}" and the following identified objects: {objects}, generate a flight plan in pseudo-language.
 
 The available commands are:
-- arm_throttle: start
-- disarm: land at the current position
+- arm_throttle: arm the copter
+- takeoff Z: lift Z meters
+- disarm: disarm the copter
+- mode_rtl: return to home
 - mode_circle: circle and observe at the current position
-- mode_guided(location): fly to the specified location
+- mode_guided(X Y Z): fly to the specified location
 
 Use the identified objects to create the mission.
 
 Example output:
 arm_throttle
-mode_guided(village_1)
-mode_guided(village_2)
+mode_guided 43.237763722222226 -85.79224314444444 100
+mode_guided 43.237765234234234 -85.79224314235235 100
 mode_circle
 mode_rtl
 disarm
@@ -185,21 +168,12 @@ step_3_chain = step_3_prompt | llm
 def generate_drone_mission(command):
     # Step 1: Extract object types
     object_types_response = step_1_chain.invoke({"command": command})
-    print('object_types_response =', object_types_response)
-    # Example: object_types_response = content='```json\n{\n    "object_types": ["building", "stadium"]\n}\n```' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 18, 'prompt_tokens': 109, 'total_tokens': 127,
-    # 'completion_tokens_details': {'audio_tokens': None, 'reasoning_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}}, 'model_name': 'gpt-4o-2024-08-06', 'system_fingerprint': 'fp_6b68a8204b', 'finish_reason': 'stop', 'logprobs': None}
-    # id='run-6fac6d0a-da32-43fc-9e41-ce60863d4fd7-0' usage_metadata={'input_tokens': 109, 'output_tokens': 18, 'total_tokens': 127, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 0}}
+    
+    #print('object_types_response =', object_types_response)
 
     
     # Extract the text from the AIMessage object
     object_types_json = object_types_response.content  # Use 'content' to get the actual response text
-    print('object_types_json =', object_types_json)
-    #Example: object_types_json = ```json
-    #{
-    #"object_types": ["building", "stadium"]
-    #}
-    #```
-
 
     # Step 2: Find objects on the map (dummy example for now)
     objects_json = find_objects(object_types_json, example_objects)
@@ -215,7 +189,7 @@ def generate_drone_mission(command):
     return flight_plan_response.content  # Return the response text from AIMessage
 
 # Example usage
-command = """Create a flight plan for the quadcopter to fly around each of the buildings, circle over the stadium and land at the take-off point."""
+command = """Create a flight plan for the quadcopter to fly around each of the buildings at the height 100m and, return to home and land at the take-off point."""
 
 
 # Run the full pipeline
