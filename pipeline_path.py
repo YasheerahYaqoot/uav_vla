@@ -179,17 +179,17 @@ def generate_drone_mission(command):
     objects_json = find_objects(object_types_json, example_objects)
 
 
-    print('objects_json =', objects_json)
+    #print('objects_json =', objects_json)
 
     
     # Step 3: Generate the flight plan
     flight_plan_response = step_3_chain.invoke({"command": command, "objects": objects_json})
-    print('flight_plan_response = ', flight_plan_response)
+    #print('flight_plan_response = ', flight_plan_response)
     
     return flight_plan_response.content  # Return the response text from AIMessage
 
 # Example usage
-command = """Create a flight plan for the quadcopter to fly around each of the buildings at the height 100m and, return to home and land at the take-off point."""
+command = """Create a flight plan for the quadcopter to fly around each of the buildings at the height 100m return to home and land at the take-off point."""
 
 
 # Run the full pipeline
