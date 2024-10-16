@@ -42,7 +42,7 @@ with open('Answers2.txt', 'w') as f:
     #process the image and text
         inputs = processor.process(
             images=[Image.open('dataset_images/' + str(i) + '.jpg')],
-            text="This is the satellite image of a city. Please, point all the stadiums."
+            text="This is the satellite image of a city. Please, point all the buildings."
         )
 
 
@@ -53,7 +53,7 @@ with open('Answers2.txt', 'w') as f:
         #generate output; maximum 200 new tokens; stop generation when <|endoftext|> is generated
         output = model.generate_from_batch(
             inputs,
-            GenerationConfig(max_new_tokens=200, stop_strings="<|endoftext|>"),
+            GenerationConfig(max_new_tokens=2000, stop_strings="<|endoftext|>"),
             tokenizer=processor.tokenizer
         )
 

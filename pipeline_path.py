@@ -8,7 +8,7 @@ import torch
 import os
 import re
 from parser_for_coordinates import parse_points
-
+from draw_circles import draw_dots_and_lines_on_image
 from recalculate_to_latlon import recalculate_coordinates, percentage_to_lat_lon, read_coordinates_from_csv
 
 #os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
@@ -90,7 +90,7 @@ def find_objects(json_input, example_objects):
     # What are we looking for?
     print(search_string)
 
-    for i in range(3, NUMBER_OF_SAMPLES):
+    for i in range(1, NUMBER_OF_SAMPLES):
         print(i)
         string = '/dataset_images/' + str(i) + '.jpg' 
     #process the image and text
@@ -111,13 +111,14 @@ def find_objects(json_input, example_objects):
         #generate output; maximum 200 new tokens; stop generation when <|endoftext|> is generated
         output = model.generate_from_batch(
             inputs,
-            GenerationConfig(max_new_tokens=200, stop_strings="<|endoftext|>"),
+            GenerationConfig(max_new_tokens=2000, stop_strings="<|endoftext|>"),
             tokenizer=processor.tokenizer
         )
 
         # only get generated tokens; decode them to text
         generated_tokens = output[0,inputs['input_ids'].size(1):]
         generated_text = processor.tokenizer.decode(generated_tokens, skip_special_tokens=True)
+        
 
         # print the generated text
         print('molmo_output =', generated_text)
@@ -130,7 +131,7 @@ def find_objects(json_input, example_objects):
         coordinates_dict = read_coordinates_from_csv(csv_file_path)
 
         result_coordinates = recalculate_coordinates(parsed_points, image_number, coordinates_dict)
-
+        draw_dots_and_lines_on_image(f'dataset_images/{i}.jpg', parsed_points, output_path=f'identified{i}.png')
 
         print(result_coordinates)
 
@@ -189,7 +190,7 @@ def generate_drone_mission(command):
     return flight_plan_response.content  # Return the response text from AIMessage
 
 # Example usage
-command = """Create a flight plan for the quadcopter to fly around each of the buildings at the height 100m return to home and land at the take-off point."""
+command = """Create a flight plan for the quadcopter to fly around each of the stadium at the height 100m return to home and land at the take-off point."""
 
 
 # Run the full pipeline

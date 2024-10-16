@@ -28,7 +28,7 @@ def parse_points(points_str):
 
 if __name__== "__main__":
     # Example input
-    points_string = '<points x1="40.2" y1="39.5" x2="47.7" y2="39.0" x3="64.9" y3="41.2" x4="65.2" y4="87.9" x5="80.2" y5="20.7" alt="building, ">building, </points>'
+    points_string = '<points x1="40.2" y1="39.5" x2="47.7" y2="39.0" x3="64.9" y3="41.2" x4="65.2" y4="87.9" x5="80.2" y5="20.7" x6="80.2" y6="20.7" alt="building, ">building, </points>'
     # Parsing the points
     result = parse_points(points_string)
     print(result)
