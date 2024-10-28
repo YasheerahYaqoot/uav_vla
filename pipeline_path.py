@@ -25,7 +25,7 @@ print(torch.cuda.is_available())
 
 LIST_OF_ANSWERS = []
 
-NUMBER_OF_SAMPLES = 15 #len(os.listdir('/VLM_Drone/dataset_images'))
+NUMBER_OF_SAMPLES = 25 #len(os.listdir('/VLM_Drone/dataset_images'))
 print('NUMBER_OF_SAMPLES',NUMBER_OF_SAMPLES)
 
 # load the processor
@@ -63,7 +63,7 @@ step_1_prompt = PromptTemplate(input_variables=["command"], template=step_1_temp
 # Instead of using RunnableSequence, we simply use pipe (|)
 step_1_chain = step_1_prompt | llm
 
-#print(step_1_chain)
+##print(step_1_chain)
 
 
 example_objects = '''
@@ -89,20 +89,20 @@ def find_objects(json_input, example_objects):
     for i in range(0,len(find_objects_json_input_2["object_types"])):
         #print(find_objects_json_input_2["object_types"][i]) #Show in console the type of an object
         sample = find_objects_json_input_2["object_types"][i]
-        search_string = search_string + sample #+ ", "
+        search_string = search_string + sample ##+ ", "
 
-    # What are we looking for?
 
+  
     print('\n')
     print('The sample is', sample)
     print('\n')
 
     for i in range(1, NUMBER_OF_SAMPLES):
         print(i)
-        string = '/new_data/' + str(i) + '.jpg' 
+        string = '/updated_dataset/' + str(i) + '.jpg' 
     #process the image and text
         inputs = processor.process(
-            images=[Image.open('new_data/' + str(i) + '.jpg')],
+            images=[Image.open('updated_dataset/' + str(i) + '.jpg')],
             text=f'''
             This is the satellite image of a city. Please, point all the next objects: {sample} 
             '''
@@ -128,9 +128,10 @@ def find_objects(json_input, example_objects):
         
 
         #print the generated text
-        #print('molmo_output =', generated_text)
+        ##print('molmo_output =', generated_text)
 
         parsed_points = parse_points(generated_text)
+       
         print('\n')
 
         print(parsed_points)
@@ -142,7 +143,7 @@ def find_objects(json_input, example_objects):
         coordinates_dict = read_coordinates_from_csv(csv_file_path)
 
         result_coordinates = recalculate_coordinates(parsed_points, image_number, coordinates_dict)
-        draw_dots_and_lines_on_image(f'new_data/{i}.jpg', parsed_points, output_path=f'identified_new_data/identified{i}.jpg')
+        draw_dots_and_lines_on_image(f'updated_dataset/{i}.jpg', parsed_points, output_path=f'identified_new_data/identified{i}.jpg')
 
         print(result_coordinates)
 
