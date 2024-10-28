@@ -1,0 +1,26 @@
+Here's a flight plan for the quadcopter to fly around each of the identified buildings at a height of 100 meters, return to the take-off point, and land:
+
+```plaintext
+arm_throttle
+takeoff 100
+mode_guided 42.77002440833332 -85.78660794444444 100
+mode_circle
+mode_guided 42.77036831944443 -85.78483206944445 100
+mode_circle
+mode_guided 42.77002440833332 -85.78463475000001 100
+mode_circle
+mode_guided 42.76978796944443 -85.78301673055556 100
+mode_circle
+mode_guided 42.769573024999985 -85.77121702777778 100
+mode_circle
+mode_guided 42.770239352777764 -85.768651875 100
+mode_circle
+mode_guided 42.7710776361111 -85.766876 100
+mode_circle
+mode_guided 42.77009963888887 -85.766876 100
+mode_circle
+mode_guided 42.769433311111094 -85.76075909722222 100
+mode_circle
+mode_rtl
+disarm
+```

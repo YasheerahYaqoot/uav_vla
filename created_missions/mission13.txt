@@ -1,0 +1,32 @@
+Here's a flight plan based on the mission description and the identified objects:
+
+```
+arm_throttle
+takeoff 100
+
+mode_guided 43.14269070277774 -16.799225194444446 100
+mode_circle
+
+mode_guided 43.13896316944437 30.670853430555553 100
+mode_circle
+
+mode_guided 43.1424881194444 31.013597680555534 100
+mode_circle
+
+mode_guided 43.1410565305555 31.013597680555534 100
+mode_circle
+
+mode_guided 43.13970597499993 46.43708893055553 100
+mode_circle
+
+mode_guided 43.13896316944437 61.860580180555544 100
+mode_circle
+
+mode_guided 43.143555058333305 83.28209580555553 100
+mode_circle
+
+mode_rtl
+disarm
+```
+
+This plan instructs the quadcopter to take off to a height of 100 meters, fly to each building's coordinates, circle around each building, and then return to the take-off point to land.

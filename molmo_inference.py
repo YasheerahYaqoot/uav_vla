@@ -3,6 +3,7 @@ from PIL import Image
 import requests
 import torch
 import os
+import csv
 
 #os.remove('Answers.txt')
 LIST_OF_ANSWERS = []

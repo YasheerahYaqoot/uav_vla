@@ -14,7 +14,7 @@ def parse_points(points_str):
     building_type = root.attrib.get('alt', '').strip().split(',')[0] if 'alt' in root.attrib else 'building'
 
     # Extract coordinates from attributes
-    for i in range(1, 6):  # Assuming x1 to x5 and y1 to y5
+    for i in range(1, 50):  # Assuming x1 to x5 and y1 to y5
         x_attr = f"x{i}"
         y_attr = f"y{i}"
         

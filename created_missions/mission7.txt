@@ -1,0 +1,18 @@
+To create a flight plan for the quadcopter to fly around each building at a height of 100 meters, return to home, and land at the take-off point, we need to define the coordinates of the buildings. Since no specific coordinates are provided in the identified objects, I'll create a hypothetical flight plan with placeholder coordinates for demonstration purposes.
+
+```plaintext
+arm_throttle
+takeoff 100
+mode_guided 43.237800000000000 -85.792200000000000 100
+mode_circle
+mode_guided 43.237810000000000 -85.792210000000000 100
+mode_circle
+mode_guided 43.237820000000000 -85.792220000000000 100
+mode_circle
+mode_guided 43.237830000000000 -85.792230000000000 100
+mode_circle
+mode_rtl
+disarm
+```
+
+In this example, the quadcopter takes off to a height of 100 meters, flies to each of the hypothetical building coordinates, circles around each building, and then returns to the home location before disarming. You would replace the placeholder coordinates with the actual coordinates of the buildings you want to fly around.

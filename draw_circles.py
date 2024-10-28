@@ -62,5 +62,5 @@ if __name__=='__main__':
         'building_5': {'type': 'building', 'coordinates': [80.2, 20.7]}
     }
     # Example usage
-    image_path = 'dataset_images/1.jpg'  # Replace with your image path
+    image_path = 'new_data/1.jpg'  # Replace with your image path
     draw_dots_and_lines_on_image(image_path, json_data, output_path='output_image33.png')
