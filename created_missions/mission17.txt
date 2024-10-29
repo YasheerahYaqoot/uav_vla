@@ -1,0 +1,60 @@
+Here's a flight plan for the quadcopter to fly around each of the identified buildings at a height of 100 meters, return to the take-off point, and land:
+
+```plaintext
+arm_throttle
+takeoff 100
+
+mode_guided 43.13416160277778 -85.74537211388889 100
+mode_circle
+
+mode_guided 43.134465227777774 -85.74489614166666 100
+mode_circle
+
+mode_guided 43.13267721388889 -85.74486758333333 100
+mode_circle
+
+mode_guided 43.13425606388889 -85.74465815555556 100
+mode_circle
+
+mode_guided 43.135139949999996 -85.74332543333333 100
+mode_circle
+
+mode_guided 43.13267721388889 -85.74280186388889 100
+mode_circle
+
+mode_guided 43.13554478333333 -85.74275426666667 100
+mode_circle
+
+mode_guided 43.135882144444444 -85.74237348888889 100
+mode_circle
+
+mode_guided 43.13409413055555 -85.74108836388889 100
+mode_circle
+
+mode_guided 43.13287963055556 -85.7406599888889 100
+mode_circle
+
+mode_guided 43.13439100833333 -85.74061239166667 100
+mode_circle
+
+mode_guided 43.13451245833333 -85.74010786111111 100
+mode_circle
+
+mode_guided 43.13343290277778 -85.73913687777778 100
+mode_circle
+
+mode_guided 43.133986175 -85.73889889166666 100
+mode_circle
+
+mode_guided 43.13694145833333 -85.73780415555557 100
+mode_circle
+
+mode_guided 43.13336543055556 -85.73758520833334 100
+mode_circle
+
+mode_guided 43.134006416666665 -85.73749001388889 100
+mode_circle
+
+mode_rtl
+disarm
+```

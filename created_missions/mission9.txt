@@ -1,40 +1,44 @@
-Here's a flight plan based on the given mission description and identified objects:
+Here's a flight plan for the quadcopter to fly around each of the identified buildings at a height of 100 meters, return to the home point, and land:
 
 ```plaintext
 arm_throttle
 takeoff 100
-mode_guided 43.01864144444444 -85.78016040555556 100
+
+mode_guided 43.01491851111111 -85.77747033333333 100
 mode_circle
-mode_guided 43.01943728888889 -85.77976117222222 100
+
+mode_guided 43.01572784444444 -85.77662433888888 100
 mode_circle
-mode_guided 43.01837166666667 -85.77968512777778 100
+
+mode_guided 43.01572784444444 -85.7758068611111 100
 mode_circle
-mode_guided 43.0190596 -85.77944748888889 100
+
+mode_guided 43.01829073333333 -85.77521751666666 100
 mode_circle
-mode_guided 43.018493066666665 -85.77926688333334 100
+
+mode_guided 43.015120844444446 -85.775189 100
 mode_circle
-mode_guided 43.0190596 -85.77923836666666 100
+
+mode_guided 43.01464873333333 -85.775189 100
 mode_circle
-mode_guided 43.01946426666667 -85.77917182777777 100
+
+mode_guided 43.01765001111111 -85.77516998888889 100
 mode_circle
-mode_guided 43.0190596 -85.77917182777777 100
+
+mode_guided 43.018830288888886 -85.7745046 100
 mode_circle
-mode_guided 43.018493066666665 -85.77917182777777 100
+
+mode_guided 43.01832445555556 -85.77383921111111 100
 mode_circle
-mode_guided 43.0190596 -85.77914331111111 100
+
+mode_guided 43.017751177777775 -85.77383921111111 100
 mode_circle
-mode_guided 43.018493066666665 -85.77914331111111 100
+
+mode_guided 43.0144464 -85.77383921111111 100
 mode_circle
-mode_guided 43.0190596 -85.7791243 100
-mode_circle
-mode_guided 43.018493066666665 -85.7791243 100
-mode_circle
-mode_guided 43.0190596 -85.77910528888889 100
-mode_circle
-mode_guided 43.018493066666665 -85.77910528888889 100
-mode_circle
+
 mode_rtl
 disarm
 ```
 
-This flight plan instructs the quadcopter to arm, take off to a height of 100 meters, fly to each building's coordinates, circle around each building, and finally return to the take-off point and disarm.
+This plan ensures the quadcopter visits each building, circles around it, and then returns to the starting point.

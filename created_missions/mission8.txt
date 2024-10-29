@@ -1,44 +1,36 @@
-Here's a flight plan for the quadcopter to fly around each of the identified buildings at a height of 100 meters, return to the take-off point, and land:
+Here's a flight plan for the quadcopter to fly around each of the identified buildings at a height of 100 meters, return to the home position, and land:
 
-```
+```plaintext
 arm_throttle
 takeoff 100
-
-mode_guided 42.95649593888889 -85.67545660941835 100
+mode_guided 42.95605700833333 -85.67699245860834 100
 mode_circle
-
-mode_guided 42.955111619444445 -85.67494465968834 100
+mode_guided 42.95655671388889 -85.67647102832778 100
 mode_circle
-
-mode_guided 42.95659723055556 -85.67467920427279 100
+mode_guided 42.95594896388889 -85.67602544245167 100
 mode_circle
-
-mode_guided 42.955415494444445 -85.67466024317167 100
+mode_guided 42.956090772222225 -85.67531440116001 100
 mode_circle
-
-mode_guided 42.95649593888889 -85.67456543766612 100
+mode_guided 42.95601649166667 -85.67284945801556 100
 mode_circle
-
-mode_guided 42.95659723055556 -85.67439478775611 100
+mode_guided 42.954335050000005 -85.67284945801556 100
 mode_circle
-
-mode_guided 42.956394647222226 -85.67437582665501 100
+mode_guided 42.95588818888889 -85.66981568183779 100
 mode_circle
-
-mode_guided 42.95673228611111 -85.67276413306057 100
+mode_guided 42.95679981388889 -85.66967347357945 100
 mode_circle
-
-mode_guided 42.95642841111111 -85.67001477339946 100
+mode_guided 42.95430128611111 -85.66953126532113 100
 mode_circle
-
-mode_guided 42.95713745277778 -85.66944594036612 100
+mode_guided 42.95703616111111 -85.66900983504057 100
 mode_circle
-
-mode_guided 42.955415494444445 -85.66878230182724 100
+mode_guided 42.954335050000005 -85.66877282127668 100
 mode_circle
-
+mode_guided 42.956462175 -85.6687254185239 100
+mode_circle
+mode_guided 42.95412571388889 -85.6685547686139 100
+mode_circle
+mode_guided 42.956340625 -85.66839359925446 100
+mode_circle
 mode_rtl
 disarm
 ```
-
-This plan ensures the quadcopter visits each building, circles around it at 100 meters, and then returns to the starting point.

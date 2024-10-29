@@ -1,18 +1,16 @@
-To create a flight plan for the quadcopter to fly around each building at a height of 100 meters, return to home, and land at the take-off point, we need to define the coordinates of the buildings. Since no specific coordinates are provided in the identified objects, I'll create a hypothetical flight plan with placeholder coordinates for demonstration purposes.
+Based on the mission description and the available commands, here's a sample flight plan in pseudo-language for a quadcopter to fly around each building at a height of 100 meters, return to home, and land at the take-off point. Since no specific coordinates for buildings are provided in the identified objects, I'll use placeholder coordinates for demonstration purposes:
 
 ```plaintext
 arm_throttle
 takeoff 100
-mode_guided 43.237800000000000 -85.792200000000000 100
-mode_circle
-mode_guided 43.237810000000000 -85.792210000000000 100
-mode_circle
-mode_guided 43.237820000000000 -85.792220000000000 100
-mode_circle
-mode_guided 43.237830000000000 -85.792230000000000 100
-mode_circle
-mode_rtl
+mode_guided 43.237800000000000 -85.79220000000000 100  # Fly to the first building
+mode_circle  # Circle around the first building
+mode_guided 43.237810000000000 -85.79221000000000 100  # Fly to the second building
+mode_circle  # Circle around the second building
+mode_guided 43.237820000000000 -85.79222000000000 100  # Fly to the third building
+mode_circle  # Circle around the third building
+mode_rtl  # Return to home
 disarm
 ```
 
-In this example, the quadcopter takes off to a height of 100 meters, flies to each of the hypothetical building coordinates, circles around each building, and then returns to the home location before disarming. You would replace the placeholder coordinates with the actual coordinates of the buildings you want to fly around.
+Please replace the placeholder coordinates with the actual coordinates of the buildings you want the quadcopter to fly around.
