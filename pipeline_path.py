@@ -25,7 +25,7 @@ print(torch.cuda.is_available())
 
 LIST_OF_ANSWERS = []
 
-NUMBER_OF_SAMPLES = 25 #len(os.listdir('/VLM_Drone/dataset_images'))
+NUMBER_OF_SAMPLES = 31 #len(os.listdir('/VLM_Drone/dataset_images'))
 print('NUMBER_OF_SAMPLES',NUMBER_OF_SAMPLES)
 
 # load the processor
