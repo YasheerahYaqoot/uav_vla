@@ -1,4 +1,4 @@
-Here's a flight plan based on the mission description and the identified objects:
+Here's a flight plan for the quadcopter to fly around each of the identified buildings at a height of 100 meters, return to the home point, and land:
 
 ```
 arm_throttle
@@ -17,4 +17,4 @@ mode_rtl
 disarm
 ```
 
-This plan instructs the quadcopter to take off to a height of 100 meters, fly to each building's coordinates, circle around each building, and then return to the take-off point before landing.
+This plan ensures the quadcopter visits each building, circles around it, and then returns to the starting point.

@@ -3,45 +3,30 @@ Here's a flight plan based on the given mission description and identified objec
 ```
 arm_throttle
 takeoff 100
-
 mode_guided 42.77496813055555 -85.78692365555555 100
 mode_circle
-
 mode_guided 42.774183583333325 -85.78692365555555 100
 mode_circle
-
 mode_guided 42.772550005555544 -85.78692365555555 100
 mode_circle
-
 mode_guided 42.76986319999999 -85.78648955277778 100
 mode_circle
-
 mode_guided 42.77324857499999 -85.78159603055556 100
 mode_circle
-
 mode_guided 42.77491439444444 -85.78139871111111 100
 mode_circle
-
 mode_guided 42.77491439444444 -85.77547912777779 100
 mode_circle
-
 mode_guided 42.77353874999999 -85.77547912777779 100
 mode_circle
-
 mode_guided 42.77636526944444 -85.7715327388889 100
 mode_circle
-
 mode_guided 42.77297989444443 -85.76833616388889 100
 mode_circle
-
 mode_guided 42.77480692222221 -85.76754688611112 100
 mode_circle
-
 mode_guided 42.776333027777774 -85.764389775 100
 mode_circle
-
 mode_rtl
 disarm
 ```
-
-This plan ensures the quadcopter flies to each building, circles around it at a height of 100 meters, and then returns to the home position to land.

@@ -17,4 +17,4 @@ mode_rtl
 disarm
 ```
 
-This plan arms the quadcopter, takes off to a height of 100 meters, flies to each building's coordinates, circles around each building, and then returns to the home position before disarming.
+This plan arms the quadcopter, takes off to a height of 100 meters, flies to each building's coordinates, circles around each building, and finally returns to the home position and disarms.

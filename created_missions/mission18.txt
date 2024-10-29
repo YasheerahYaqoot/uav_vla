@@ -19,4 +19,4 @@ mode_rtl
 disarm
 ```
 
-This plan ensures the quadcopter visits each building, circles around it for observation, and then returns to the starting point to land.
+This plan ensures the quadcopter visits each building, circles around it for observation, and then returns to the starting point.

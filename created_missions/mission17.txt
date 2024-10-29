@@ -1,4 +1,4 @@
-Here's a flight plan for the quadcopter to fly around each of the identified buildings at a height of 100 meters, return to the take-off point, and land:
+Here's a flight plan for the quadcopter to fly around each of the identified buildings at a height of 100 meters, return to the home point, and land:
 
 ```plaintext
 arm_throttle
@@ -58,3 +58,5 @@ mode_circle
 mode_rtl
 disarm
 ```
+
+This plan ensures the quadcopter visits each building, circles around it, and then returns to the starting point.

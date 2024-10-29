@@ -1,4 +1,4 @@
-Here's a flight plan based on the given mission description and identified objects:
+Here's a flight plan based on the mission description and the identified objects:
 
 ```
 arm_throttle

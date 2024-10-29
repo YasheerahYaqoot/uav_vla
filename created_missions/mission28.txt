@@ -1,0 +1,129 @@
+Here's a flight plan for the quadcopter to fly around each of the identified buildings at a height of 100 meters, return to the take-off point, and land:
+
+```plaintext
+arm_throttle
+takeoff 100
+
+mode_guided 42.798699219444444 -85.61460230555555 100
+mode_circle
+
+mode_guided 42.798240136111104 -85.614498325 100
+mode_circle
+
+mode_guided 42.79993218611111 -85.61233363888888 100
+mode_circle
+
+mode_guided 42.798961552777776 -85.61195552777777 100
+mode_circle
+
+mode_guided 42.79993218611111 -85.61176647222221 100
+mode_circle
+
+mode_guided 42.79877136111111 -85.61166249166666 100
+mode_circle
+
+mode_guided 42.799827252777774 -85.61157741666666 100
+mode_circle
+
+mode_guided 42.798961552777776 -85.61148288888889 100
+mode_circle
+
+mode_guided 42.802699802777774 -85.61034855555555 100
+mode_circle
+
+mode_guided 42.80256863611111 -85.6101595 100
+mode_circle
+
+mode_guided 42.80243746944444 -85.6101595 100
+mode_circle
+
+mode_guided 42.80233909444444 -85.6101595 100
+mode_circle
+
+mode_guided 42.80224071944444 -85.6101595 100
+mode_circle
+
+mode_guided 42.80214234444444 -85.6101595 100
+mode_circle
+
+mode_guided 42.80205708611111 -85.6101595 100
+mode_circle
+
+mode_guided 42.80197838611111 -85.6101595 100
+mode_circle
+
+mode_guided 42.80188001111111 -85.6101595 100
+mode_circle
+
+mode_guided 42.801794752777774 -85.6101595 100
+mode_circle
+
+mode_guided 42.80168326111111 -85.6101595 100
+mode_circle
+
+mode_guided 42.80159800277777 -85.6101595 100
+mode_circle
+
+mode_guided 42.80148651111111 -85.6101595 100
+mode_circle
+
+mode_guided 42.80140125277778 -85.6101595 100
+mode_circle
+
+mode_guided 42.801322552777776 -85.6101595 100
+mode_circle
+
+mode_guided 42.801256969444445 -85.6101595 100
+mode_circle
+
+mode_guided 42.80119138611111 -85.6101595 100
+mode_circle
+
+mode_guided 42.801125802777776 -85.6101595 100
+mode_circle
+
+mode_guided 42.801060219444444 -85.6101595 100
+mode_circle
+
+mode_guided 42.800994636111106 -85.6101595 100
+mode_circle
+
+mode_guided 42.800929052777775 -85.6101595 100
+mode_circle
+
+mode_guided 42.800863469444444 -85.6101595 100
+mode_circle
+
+mode_guided 42.800797886111106 -85.6101595 100
+mode_circle
+
+mode_guided 42.800732302777774 -85.6101595 100
+mode_circle
+
+mode_guided 42.80066671944444 -85.6101595 100
+mode_circle
+
+mode_guided 42.80060113611111 -85.6101595 100
+mode_circle
+
+mode_guided 42.800535552777774 -85.6101595 100
+mode_circle
+
+mode_guided 42.80046996944444 -85.6101595 100
+mode_circle
+
+mode_guided 42.80040438611111 -85.6101595 100
+mode_circle
+
+mode_guided 42.80033880277777 -85.6101595 100
+mode_circle
+
+mode_guided 42.80027321944444 -85.6101595 100
+mode_circle
+
+mode_guided 42.80020763611111 -85.6101595 100
+mode_circle
+
+mode_rtl
+disarm
+```
