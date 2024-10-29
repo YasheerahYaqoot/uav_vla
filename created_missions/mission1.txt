@@ -63,4 +63,4 @@ mode_rtl
 disarm
 ```
 
-This flight plan instructs the quadcopter to take off to a height of 100 meters, fly to each building's coordinates, circle around each building, and then return to the home position before disarming.
+This flight plan commands the quadcopter to fly to each building's coordinates at a height of 100 meters, circle around each building, and then return to the take-off point.
