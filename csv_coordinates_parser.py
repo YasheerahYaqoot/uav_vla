@@ -151,7 +151,7 @@ SE Corner Long: -85.59075
 
 ---
 Image: 16.jpg
-NW Corner Lat: 43.2697305S5555554,
+NW Corner Lat: 43.269730555555554,
 NW Corner Long: -85.63715388886869,
 SE Corner Lat: 43.262975,
 SE Corner Long: -85.6276361111111
