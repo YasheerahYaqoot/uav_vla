@@ -8,7 +8,7 @@ import csv
 #os.remove('Answers.txt')
 LIST_OF_ANSWERS = []
 
-NUMBER_OF_SAMPLES = len(os.listdir('/VLM_Drone/dataset_images'))
+NUMBER_OF_SAMPLES = len(os.listdir('/VLM_Drone/updated_dataset'))
 print('NUMBER_OF_SAMPLES',NUMBER_OF_SAMPLES)
 
 # load the processor
@@ -35,14 +35,14 @@ print('here2')
 #     text="This is the satellite image of a city. Please, point all the stadiums."
 # )
 
-with open('Answers2.txt', 'w') as f:
+with open('identified_points.txt', 'w') as f:
 
     for i in range(1, NUMBER_OF_SAMPLES):
         print(i)
-        string = '/dataset_images/' + str(i) + '.jpg' 
+        string = '/updated_dataset/' + str(i) + '.jpg' 
     #process the image and text
         inputs = processor.process(
-            images=[Image.open('dataset_images/' + str(i) + '.jpg')],
+            images=[Image.open('updated_dataset/' + str(i) + '.jpg')],
             text="This is the satellite image of a city. Please, point all the buildings."
         )
 
