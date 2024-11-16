@@ -1,0 +1,421 @@
+Image: 1.jpg
+NW Corner Lat: 42.884005555555554,
+NW Corner Long: -85.76918888888889,
+SE Corner Lat: 42.87726111111111,
+SE Corner Long: -85.75970833333334
+
+---
+Image: 2.jpg
+NW Corner Lat: 42.918299999999995,
+NW Corner Long: -85.7699566666666,
+SE Corner Lat: 42.91155555555555,
+SE Corner Long: -85.76048055555556
+
+---
+Image: 3.jpg
+NW Corner Lat: 43.24042777777778,
+NW Corner Long: -85.79607777777778,
+SE Corner Lat: 43.23368333333333,
+SE Corner Long: -85.78653888888888
+
+---
+Image: 4.jpg
+NW Corner Lat: 43.29844444444444,
+NW Corner Long: -85.51565833333333,
+SE Corner Lat: 43.29168055555555,
+SE Corner Long: -85.5061416666666
+
+---
+Image: 5.jpg
+NW Corner Lat: 42.778375,
+NW Corner Long: -85.78739722222222,
+SE Corner Lat: 42.76762777777776,
+SE Corner Long: -85.74793333333334
+
+---
+Image: 6.jpg
+NW Corner Lat: 42.76861111111111,
+NW Corner Long: -85.66414722222223,
+SE Corner Lat: 42.761858333333336,
+SE Corner Long: -85.65469444444444
+
+---
+Image: 7.jpg
+NW Corner Lat: 42.90241111111111,
+NW Corner Long: -85.3123361111111,
+SE Corner Lat: 42.89562777777776,
+SE Corner Long: -85.30290277777777
+
+---
+Image: 8.jpg
+NW Corner Lat: 42.85439444444445,
+NW Corner Long: -85 3116027777778,
+SE Corner Lat: 42.84761111111114,
+SE Corner Long: -85.30217777777777
+
+---
+Image: 9.jpg
+NW Corner Lat: 42.96056111111111,
+NW Corner Long: -85.6775138888889,
+SE Corner Lat: 42.953808333333335,
+SE Corner Long: -85.66803333833334
+
+---
+Image: 10.jpg
+NW Corner Lat: 43.02106944444444,
+NW Corner Long: -85.78165277777778,
+SE Corner Lat: 43.014325,
+SE Corner Long: -85.77214722222222
+
+---
+Image: 11.jpg
+NW Corner Lat: 42.88389166666666,
+NW Corner Long: -85.77851666660565,
+SE Corner Lat: 42.87714722222222,
+SE Corner Long: -85.76903833833333
+
+---
+Image: 12.jpg
+NW Corner Lat: 42.88489444444444,
+NW Corner Long: -85.69457222222222,
+SE Corner Lat: 42.878144444444445,
+SE Corner Long: -85.6851
+
+---
+Image: 13.jpg
+NW Corner Lat: 42.89904166666667,
+NW Corner Long: -85.65755,
+SE Corner Lat: 42.89228611111111,
+SE Corner Long: -85.64807777777779
+
+---
+Image: 14.jpg
+NW Corner Lat: 43.14564166666666,
+NW Corner Long: -85.69081944444444,
+SE Corner Lat: 43.138888888888806,
+SE Corner Long: 85.68130555555555
+
+---
+Image: 15.jpg
+NW Corner Lat: 42.81619722222222,
+NW Corner Long: -85.70241944444444,
+SE Corner Lat: 42.80944444444445,
+SE Corner Long: -85.6929555555556
+
+---
+Image: 16.jpg
+NW Corner Lat: 43.09763055555556,
+NW Corner Long: -85.6897888888889,
+SE Corner Lat: 43.09087777777778,
+SE Corner Long: -85.68028333333334
+
+---
+Image: 17.jpg
+NW Corner Lat: 43.110686111111114,
+NW Corner Long: -85.74625277777778,
+SE Corner Lat: 43.10393888888889,
+SE Corner Long: -85.7367388888889
+
+---
+Image: 18.jpg
+NW Corner Lat: 43.13812222222222,
+NW Corner Long: -85.74686666666666,
+SE Corner Lat: 43.131375,
+SE Corner Long: -85.73734722222223
+
+---
+Image: 19.jpg
+NW Corner Lat: 43.076505555555556,
+NW Corner Long: -85.73613055555556,
+SE Corner Lat: 43.06975893333334,
+SE Corner Long: -85.72662222222222
+
+---
+Image: 20.jpg
+NW Corner Lat: 43.15206111111111,
+NW Corner Long: -85.72843888888869,
+SE Corner Lat: 43.145313888886806,
+SE Corner Long: -85.71891944444445
+
+---
+Image: 21.jpg
+NW Corner Lat: 43.179608333333364,
+NW Corner Long: -85.71967222222223,
+SE Corner Lat: 43.17285893333333,
+SE Corner Long: -85.71015
+
+---
+Image: 22.jpg
+NW Corner Lat: 42.857350000000004,
+NW Corner Long: -85.70330883833334,
+SE Corner Lat: 42.8506,
+SE Corner Long: -85.69363611111111
+
+---
+Image: 23.jpg
+NW Corner Lat: 42.78200833333333,
+NW Corner Long: -85.69236044444445,
+SE Corner Lat: 42.77525893333333,
+SE Corner Long: -85.68291111111111
+
+---
+Image: 24.jpg
+NW Corner Lat: 43.09066388888889,
+NW Corner Long: -85.699,
+SE Corner Lat: 43.083913888888804,
+SE Corner Long: -85.68949444444445
+
+---
+Image: 25.jpg
+NW Corner Lat: 42.80966111111111,
+NW Corner Long: -85.67432500000001,
+SE Corner Lat: 42.80290833333333,
+SE Corner Long: -85.66486388888889
+
+---
+Image: 26.jpg
+NW Corner Lat: 42.8028,
+NW Corner Long: -85.67417777777779,
+SE Corner Lat: 42.79604722222222,
+SE Corner Long: -85.66471944444444
+
+---
+Image: 27.jpg
+NW Corner Lat: 43.056691666656666,
+NW Corner Long: -85.67020000000001,
+SE Corner Lat: 43.04993888888889,
+SE Corner Long: -85.66070277777779
+
+---
+Image: 28.jpg
+NW Corner Lat: 43.2697305S5555554,
+NW Corner Long: -85.63715388886869,
+SE Corner Lat: 43.262975,
+SE Corner Long: -85.6276361111111
+
+---
+Image: 29.jpg
+NW Corner Lat: 42.80342777777778,
+NW Corner Long: -85.61828888888888,
+SE Corner Lat: 42.79686944444444,
+SE Corner Long: -85.6088361111111
+
+---
+Image: 30.jpg
+NW Corner Lat: 43.19438888888889,
+NW Corner Long: -85.62623333333333,
+SE Corner Lat: 43.19438888888889,
+SE Corner Long: -85.61685833333333
+
+---
+Image: 31.jpg
+NW Corner Lat: 43.112186111111114,
+NW Corner Long: -85.61518888888888,
+SE Corner Lat: 43.10542777777778,
+SE Corner Long: -85.60569166666666
+
+---
+Image: 32.jpg
+NW Corner Lat: 43.11904444444445,
+NW Corner Long: -85.61532777777778,
+SE Corner Lat: 43.11228611111111,
+SE Corner Long: -85.60582777777778
+
+---
+Image: 33.jpg
+NW Corner Lat: 43.16019722222222,
+NW Corner Long: -85.61618388888868,
+SE Corner Lat: 43.153438888886806,
+SE Corner Long: -85.6066S5S5S5S555
+
+---
+Image: 34.jpg
+NW Corner Lat: 42.83106666666667,
+NW Corner Long: -85.60020277777777,
+SE Corner Lat: 42.82430555555556,
+SE Corner Long: -85.59075
+
+---
+Image: 35.jpg
+NW Corner Lat: 43.119147222222225,
+NW Corner Long: -85.60596666666568,
+SE Corner Lat: 43.11238888888889,
+SE Corner Long: -85.S9645666660565
+
+---
+Image: 36.jpg
+NW Corner Lat: 43.215260444444445,
+NW Corner Long: -85.59852222222221,
+SE Corner Lat: 43.208511111111115,
+SE Corner Long: -85.58900883833333
+
+---
+Image: 37.jpg
+NW Corner Lat: 42.97530833333334,
+NW Corner Long: -85.58439722222222,
+SE Corner Lat: 42.96854722222223,
+SE Corner Long: -85.57492222222221
+
+---
+Image: 38.jpg
+NW Corner Lat: 43.208511111111115,
+NW Corner Long: -85.58900883833333,
+SE Corner Lat: 43.201750000000004,
+SE Corner Long: -85.57949722222222
+
+---
+Image: 39.jpg
+NW Corner Lat: 42.76717222222222,
+NW Corner Long: -85.78517222222222,
+SE Corner Lat: 42.76042777777778,
+SE Corner Long: -85.77570555555556
+
+---
+Image: 40.jpg
+NW Corner Lat: 42.89555277777778,
+NW Corner Long: -85.31223333333332,
+SE Corner Lat: 42.88876944444444,
+SE Corner Long: -85.30279999999999
+
+---
+Image: 41.jpg
+NW Corner Lat: 43.09447222222222,
+NW Corner Long: -85.31528055555555,
+SE Corner Lat: 43.08769166666667,
+SE Corner Long: -85.30581666666666
+
+---
+Image: 42.jpg
+NW Corner Lat: 42.768505555555556,
+NW Corner Long: -85.67345555555556,
+SE Corner Lat: 42.76175277777778,
+SE Corner Long: -85.66400277777778
+
+---
+Image: 43.jpg
+NW Corner Lat: 42.88093888888889
+NW Corner Long: -85.41462222222223
+SE Corner Lat: 42.87416666666667
+SE Corner Long: -85.40518055555556
+
+---
+Image: 44.jpg
+NW Corner Lat: 43.02781111111111
+NW Corner Long: -85.79115833333333
+SE Corner Lat: 43.02106944444444
+SE Corner Long: -85.78165277777778
+
+---
+Image: 45.jpg
+NW Corner Lat: 43.299680555555554
+NW Corner Long: -85.38419166666667
+SE Corner Lat: 43.292905555555556
+SE Corner Long: -85.37468888888888
+
+--- 
+Image: 46.jpg
+NW Corner Lat: 43.12829166666667
+NW Corner Long: -85.37199722222222
+SE Corner Lat: 43.12151388888889
+SE Corner Long: -85.36252222222221
+
+---
+Image: 47.jpg
+NW Corner Lat: 42.76871666666666
+NW Corner Long: -85.65483611111112
+SE Corner Lat: 42.76196111111111
+SE Corner Long: -85.64538611111112
+
+---
+Image: 48.jpg
+NW Corner Lat: 43.17207222222222
+NW Corner Long: -85.77574722222222
+SE Corner Lat: 43.165330555555556
+SE Corner Long: -85.76621944444445
+
+---
+Image: 49.jpg
+NW Corner Lat: 42.80146666666666
+NW Corner Long: -85.78595555555556
+SE Corner Lat: 42.794725
+SE Corner Long: -85.77648611111111
+
+---
+Image: 50.jpg
+NW Corner Lat: 42.812925
+NW Corner Long: -85.34824444444445
+SE Corner Lat: 42.80614444444444
+SE Corner Long: -85.33881944444444
+
+---
+Image: 51.jpg
+NW Corner Lat: 42.874658333333336
+NW Corner Long: -85.34922222222222
+SE Corner Lat: 42.86788055555556
+SE Corner Long: -85.33978888888889
+
+---
+Image: 52.jpg
+NW Corner Lat: 42.83146111111112
+NW Corner Long: -85.56292499999999
+SE Corner Lat: 42.8247
+SE Corner Long: -85.55347499999999
+
+---
+Image: 53.jpg
+NW Corner Lat: 42.79040277777778
+NW Corner Long: -85.55281944444444
+SE Corner Lat: 42.78363888888889
+SE Corner Long: -85.543375
+
+---
+Image: 54.jpg
+NW Corner Lat: 43.08953888888889
+NW Corner Long: -85.79258333333333
+SE Corner Lat: 43.082797222222226
+SE Corner Long: -85.78306666666667
+
+---
+Image: 55.jpg
+NW Corner Lat: 42.893483333333336
+NW Corner Long: -85.53613333333332
+SE Corner Lat: 42.886719444444445
+SE Corner Long: -85.526675
+
+---
+Image: 56.jpg
+NW Corner Lat: 42.89367222222222
+NW Corner Long: -85.517475
+SE Corner Lat: 42.88690833333333
+SE Corner Long: -85.50801944444444
+
+---
+Image: 57.jpg
+NW Corner Lat: 42.79210277777778
+NW Corner Long: -85.3758611111111
+SE Corner Lat: 42.785325
+SE Corner Long: -85.3664361111111
+
+---
+Image: 58.jpg
+NW Corner Lat: 43.18117465197748
+NW Corner Long: -85.57909078876155
+SE Corner Lat: 43.17441427726903
+SE Corner Long: -85.56958449893962
+
+---
+Image: 59.jpg
+NW Corner Lat: 42.89474379865728
+NW Corner Long: -85.40552609503916
+SE Corner Lat: 42.88796867007531
+SE Corner Long: -85.39608276301134
+
+---
+Image: 60.jpg
+NW Corner Lat: 43.25089444444444
+NW Corner Long: -85.46784722222222
+SE Corner Lat: 43.244125000000004
+SE Corner Long: -85.45834166666667
+
+---
+
