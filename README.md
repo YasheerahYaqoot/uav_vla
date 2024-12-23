@@ -21,13 +21,36 @@ This repository includes:
 - Dataset and benchmark details.
 - Code for simulation-based and real-world experiments.
 
+##Docker
 
+It is possible to run docker by
 
-## Dataset
+'''
+docker run --gpus all -it <imagename>
+'''
+
+## Benchmark
+
+The benchmark is stored in the folder benchmark-UAV-VLPA-nano-30. There are images, .txt and .csv files.
 
 ## Installation
 
-To generate actions, run
+To install requirements, run 
+
+pip -r requirements.txt
+
+## Mission generation
+
+To generate commands for UAV, run
+```
+python3 generate_plans.py
+```
+It will produce the commands to /created_missions and visualizations to the /identified_new_data
+
+
+## To create the path-plans
+
+To generate commands, run
 ```
 python3 generate_plans.py
 ```
