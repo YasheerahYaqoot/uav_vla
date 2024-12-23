@@ -25,9 +25,9 @@ This repository includes:
 
 It is possible to run docker by
 
-'''
+```
 docker run --gpus all -it <imagename>
-'''
+```
 
 ## Benchmark
 
