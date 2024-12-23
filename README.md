@@ -1,8 +1,8 @@
-## UAV-VLA: Vision-Language-Action System for Large Scale Aerial Mission Generation
+# UAV-VLA: Vision-Language-Action System for Large Scale Aerial Mission Generation
 
 
 
-# Abstract
+## Abstract
 The UAV-VLA (Visual-Language-Action) system is a tool designed to facilitate communication with aerial robots. 
 By integrating satellite imagery processing with the Visual Language Model (VLM) and the powerful capabilities of GPT, UAV-VLA enables users to generate general flight paths-and-action plans through simple text requests. 
 This system leverages the rich contextual information provided by satellite images, allowing for enhanced decision-making and mission planning. 
