@@ -1,1 +1,1 @@
-Title: UAV-VLA: Vision-Language-Action System for Large Scale Aerial Mission Generation
+## UAV-VLA: Vision-Language-Action System for Large Scale Aerial Mission Generation
