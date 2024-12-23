@@ -2,17 +2,17 @@ import os
 import re
 from PIL import Image, ImageDraw
 
-# For MP (Uncomment this to get images of Mission Planner data)
-# input_folder = "dataset_samples"
-# output_folder = "identified_images_mp"
+# # For MP (Uncomment this to get images of Mission Planner data)
+# input_folder = "../benchmark-UAV-VLPA-nano-30/images"
+# output_folder = "../benchmark-UAV-VLPA-nano-30/identified_images_mp"
 # coordinate_file = "mp_coordinates.txt"
-# latlong_file = "img_lat_long_data.txt"
+# latlong_file = "../benchmark-UAV-VLPA-nano-30/img_lat_long_data.txt"
 
 # For VLM (Comment this for MP data results)
-input_folder = "dataset_samples"
+input_folder = "../benchmark-UAV-VLPA-nano-30/images"
 output_folder = "identified_images_VLM"
 coordinate_file = "VLM_coordinates.txt"
-latlong_file = "img_lat_long_data.txt"
+latlong_file = "../benchmark-UAV-VLPA-nano-30/img_lat_long_data.txt"
 
 os.makedirs(output_folder, exist_ok=True)
 
@@ -55,6 +55,7 @@ def parse_coordinates(file_path, image_name):
 
 def normalize_coordinates(points, image_size, coord_bounds):
     """Normalize latitude/longitude to image dimensions."""
+    print(coord_bounds)
     min_lat, max_lat, min_lon, max_lon = coord_bounds
     width, height = image_size
 

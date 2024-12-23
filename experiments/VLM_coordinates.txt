@@ -655,7 +655,7 @@ Image 17:
 
 Image 18:
   Home Position:
-    Latitude: 43.193713333333335
+    Latitude: 43.19438888888889
     Longitude: -85.62529583333333
   Building 1:
     Latitude: 43.190423377777776

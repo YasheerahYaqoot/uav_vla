@@ -1,62 +1,40 @@
-Here's a flight plan for the quadcopter to fly around each of the identified buildings at a height of 100 meters, return to the home point, and land:
-
-```plaintext
-arm_throttle
+```
+arm throttle
 takeoff 100
-
-mode_guided 43.13416160277778 -85.74537211388889 100
-mode_circle
-
-mode_guided 43.134465227777774 -85.74489614166666 100
-mode_circle
-
-mode_guided 43.13267721388889 -85.74486758333333 100
-mode_circle
-
-mode_guided 43.13425606388889 -85.74465815555556 100
-mode_circle
-
-mode_guided 43.135139949999996 -85.74332543333333 100
-mode_circle
-
-mode_guided 43.13267721388889 -85.74280186388889 100
-mode_circle
-
-mode_guided 43.13554478333333 -85.74275426666667 100
-mode_circle
-
-mode_guided 43.135882144444444 -85.74237348888889 100
-mode_circle
-
-mode_guided 43.13409413055555 -85.74108836388889 100
-mode_circle
-
-mode_guided 43.13287963055556 -85.7406599888889 100
-mode_circle
-
-mode_guided 43.13439100833333 -85.74061239166667 100
-mode_circle
-
-mode_guided 43.13451245833333 -85.74010786111111 100
-mode_circle
-
-mode_guided 43.13343290277778 -85.73913687777778 100
-mode_circle
-
-mode_guided 43.133986175 -85.73889889166666 100
-mode_circle
-
-mode_guided 43.13694145833333 -85.73780415555557 100
-mode_circle
-
-mode_guided 43.13336543055556 -85.73758520833334 100
-mode_circle
-
-mode_guided 43.134006416666665 -85.73749001388889 100
-mode_circle
-
-mode_rtl
+mode guided 43.19438888888889 -85.62476145833332 100
+mode circle
+mode guided 43.19438888888889 -85.62429270833333 100
+mode circle
+mode guided 43.19438888888889 -85.62426458333333 100
+mode circle
+mode guided 43.19438888888889 -85.62405833333332 100
+mode circle
+mode guided 43.19438888888889 -85.62274583333333 100
+mode circle
+mode guided 43.19438888888889 -85.62223020833333 100
+mode circle
+mode guided 43.19438888888889 -85.62218333333333 100
+mode circle
+mode guided 43.19438888888889 -85.62180833333333 100
+mode circle
+mode guided 43.19438888888889 -85.62054270833333 100
+mode circle
+mode guided 43.19438888888889 -85.62012083333333 100
+mode circle
+mode guided 43.19438888888889 -85.62007395833332 100
+mode circle
+mode guided 43.19438888888889 -85.61957708333333 100
+mode circle
+mode guided 43.19438888888889 -85.61862083333332 100
+mode circle
+mode guided 43.19438888888889 -85.61838645833333 100
+mode circle
+mode guided 43.19438888888889 -85.61730833333333 100
+mode circle
+mode guided 43.19438888888889 -85.61709270833333 100
+mode circle
+mode guided 43.19438888888889 -85.61699895833333 100
+mode circle
+mode rtl
 disarm
 ```
-
-This plan ensures the quadcopter visits each building, circles around it, and then returns to the starting point.

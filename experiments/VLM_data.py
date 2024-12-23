@@ -1,9 +1,9 @@
 import re
 
-stadium_file = '/home/yasheerah/uav_vla/experiments/identified_points.txt'
-latlong_file = '/home/yasheerah/uav_vla/experiments/img_lat_long_data.txt'
-home_position_file = '/home/yasheerah/uav_vla/experiments/home_position.txt'
-output_file = '/home/yasheerah/uav_vla/experiments/VLM_coordinates.txt'
+stadium_file = '../identified_points.txt'
+latlong_file = '../benchmark-UAV-VLPA-nano-30/img_lat_long_data.txt'
+home_position_file = 'home_position.txt'
+output_file = 'VLM_coordinates.txt'
 
 def extract_coordinates(data):
     coords = {}

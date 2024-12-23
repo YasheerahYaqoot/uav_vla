@@ -67,7 +67,7 @@ Trajectory length from VLM: 2.75 km
 Trajectory length from MP: 2.26 km
 
 Image 18:
-Trajectory length from VLM: 4.37 km
+Trajectory length from VLM: 4.48 km
 Trajectory length from MP: 3.33 km
 
 Image 19:

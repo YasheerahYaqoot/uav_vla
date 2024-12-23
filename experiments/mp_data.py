@@ -1,7 +1,7 @@
 import os
 
-input_directory = '/home/yasheerah/uav_vla/experiments/mission_planner_data/waypoints/'
-output_txt = '/home/yasheerah/uav_vla/experiments/mp_coordinates.txt'
+input_directory = '../benchmark-UAV-VLPA-nano-30/mission_planner_data/waypoints/'
+output_txt = 'mp_coordinates.txt'
 
 output_content = ""
 

@@ -86,7 +86,7 @@ Image 17.jpg:
 
 Image 18.jpg:
   Home Position:
-    Latitude = 43.193713333333335
+    Latitude = 43.19438888888889
     Longitude = -85.62529583333333
 
 Image 19.jpg:

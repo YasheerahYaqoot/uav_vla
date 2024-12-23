@@ -85,9 +85,9 @@ DTW-based Root Mean Squared Error (RMSE): 349.451594 meters
 Interpolation-based Root Mean Squared Error (RMSE): 524.524956 meters
 
 Results for Image 18.jpg:
-Nearest Neighbor Error (KNN): 19.246170 meters
-DTW-based Root Mean Squared Error (RMSE): 320.518981 meters
-Interpolation-based Root Mean Squared Error (RMSE): 438.667048 meters
+Nearest Neighbor Error (KNN): 24.573062 meters
+DTW-based Root Mean Squared Error (RMSE): 326.441934 meters
+Interpolation-based Root Mean Squared Error (RMSE): 438.439904 meters
 
 Results for Image 19.jpg:
 Nearest Neighbor Error (KNN): 34.564502 meters

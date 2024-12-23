@@ -1,26 +1,24 @@
-Here's a flight plan based on the given mission description and identified objects:
-
 ```
-arm_throttle
+arm throttle
 takeoff 100
-mode_guided 42.882724877777775 -85.7776446604046 100
-mode_circle
-mode_guided 42.88013501111111 -85.77746457216743 100
-mode_circle
-mode_guided 42.878003766666666 -85.7773697888847 100
-mode_circle
-mode_guided 42.87964266666666 -85.77571108143705 100
-mode_circle
-mode_guided 42.87930544444444 -85.77357845757578 100
-mode_circle
-mode_guided 42.88018222222222 -85.77348367429305 100
-mode_circle
-mode_guided 42.88141645555555 -85.77324671608625 100
-mode_circle
-mode_guided 42.879238 -85.77011886775638 100
-mode_circle
-mode_guided 42.883149777777774 -85.76926581821186 100
-mode_circle
-mode_rtl
+mode guided 42.856182249999996 -85.7024189474289 100
+mode circle
+mode guided 42.853590249999996 -85.70223516561167 100
+mode circle
+mode guided 42.85145725 -85.70213843833945 100
+mode circle
+mode guided 42.8530975 -85.70044571107556 100
+mode circle
+mode guided 42.852759999999996 -85.69826934745056 100
+mode circle
+mode guided 42.8536375 -85.69817262017834 100
+mode circle
+mode guided 42.85487275 -85.69793080199777 100
+mode circle
+mode guided 42.852692499999996 -85.69473880201444 100
+mode circle
+mode guided 42.856607499999996 -85.69386825656444 100
+mode circle
+mode rtl
 disarm
 ```

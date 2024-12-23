@@ -43,7 +43,9 @@ plt.title("Comparison of Trajectory Lengths from VLM and MP with Deviations", fo
 plt.legend(fontsize=14)  
 plt.grid(True, linestyle='--', alpha=0.7)
 plt.tight_layout()
-plt.show()
+# plt.show()
+plt.savefig("results/traj_bar_chart.png")  # Save the plot as a PNG file
+plt.close()
 
 ## ---------------------------------RMSE Graph ------------------------------------------------
 import matplotlib.pyplot as plt
@@ -105,7 +107,9 @@ plt.xticks(fontsize=12)
 plt.yticks(fontsize=12) 
 plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.tight_layout()
-plt.show()
+plt.savefig("results/error_box_plot.png")  
+plt.close() 
+# plt.show()
 
 
 # Error Comparison Table

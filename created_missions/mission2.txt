@@ -1,62 +1,38 @@
-Here's a flight plan for the quadcopter to fly around each of the identified buildings at a height of 100 meters, return to the take-off point, and land:
-
-```
-arm_throttle
-takeoff 100
-
-mode_guided 43.234634299999996 -85.79368351666668 100
-mode_circle
-
-mode_guided 43.2345736 -85.79312072222223 100
-mode_circle
-
-mode_guided 43.23576062222222 -85.79307302777778 100
-mode_circle
-
-mode_guided 43.23549084444444 -85.79288225 100
-mode_circle
-
-mode_guided 43.23556503333333 -85.79259608333334 100
-mode_circle
-
-mode_guided 43.23576062222222 -85.79254838888889 100
-mode_circle
-
-mode_guided 43.2348164 -85.79007781666667 100
-mode_circle
-
-mode_guided 43.23471523333333 -85.78960087222222 100
-mode_circle
-
-mode_guided 43.23483663333333 -85.78822727222222 100
-mode_circle
-
-mode_guided 43.2345736 -85.78806511111111 100
-mode_circle
-
-mode_guided 43.2348164 -85.78796972222221 100
-mode_circle
-
-mode_guided 43.23440498888889 -85.78777894444444 100
-mode_circle
-
-mode_guided 43.23483663333333 -85.78763586111111 100
-mode_circle
-
-mode_guided 43.23440498888889 -85.78734969444444 100
-mode_circle
-
-mode_guided 43.23462081111111 -85.78706352777778 100
-mode_circle
-
-mode_guided 43.23920703333334 -85.78701583333333 100
-mode_circle
-
-mode_guided 43.23947681111112 -85.78687275 100
-mode_circle
-
-mode_rtl
-disarm
-```
-
-This plan ensures the quadcopter visits each building, circles around it at 100 meters, and then returns to the starting point.
+arm throttle  
+takeoff 100  
+mode guided 43.29386083055556 -85.38180646944444 100  
+mode circle  
+mode guided 43.29379985555556 -85.38124580555555 100  
+mode circle  
+mode guided 43.29499225555556 -85.38119829166666 100  
+mode circle  
+mode guided 43.29472125555556 -85.38100823611111 100  
+mode circle  
+mode guided 43.29479578055556 -85.38072315277778 100  
+mode circle  
+mode guided 43.29499225555556 -85.38067563888889 100  
+mode circle  
+mode guided 43.29404375555556 -85.37821441944445 100  
+mode circle  
+mode guided 43.293942130555564 -85.37773928055555 100  
+mode circle  
+mode guided 43.294064080555565 -85.37637088055556 100  
+mode circle  
+mode guided 43.29379985555556 -85.37620933333334 100  
+mode circle  
+mode guided 43.29404375555556 -85.37611430555555 100  
+mode circle  
+mode guided 43.293630480555564 -85.37592425 100  
+mode circle  
+mode guided 43.294064080555565 -85.37578170833334 100  
+mode circle  
+mode guided 43.293630480555564 -85.375496625 100  
+mode circle  
+mode guided 43.29384728055556 -85.37521154166666 100  
+mode circle  
+mode guided 43.29845428055555 -85.37516402777777 100  
+mode circle  
+mode guided 43.29872528055556 -85.37502148611111 100  
+mode circle  
+mode rtl  
+disarm  

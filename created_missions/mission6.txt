@@ -1,28 +1,24 @@
-Here's a flight plan based on the mission description and the identified objects:
-
 ```
-arm_throttle
+arm throttle
 takeoff 100
-mode_guided 42.8971404611111 -85.31214744444443 100
-mode_circle
-mode_guided 42.897357527777764 -85.31172294444443 100
-mode_circle
-mode_guided 42.8971404611111 -85.31167577777777 100
-mode_circle
-mode_guided 42.89699122777776 -85.3112890111111 100
-mode_circle
-mode_guided 42.896855561111096 -85.30846844444443 100
-mode_circle
-mode_guided 42.897276127777765 -85.30785527777776 100
-mode_circle
-mode_guided 42.897805227777766 -85.30743077777777 100
-mode_circle
-mode_guided 42.89718794444443 -85.30743077777777 100
-mode_circle
-mode_guided 42.89676737777776 -85.3059686111111 100
-mode_circle
-mode_rtl
+mode guided 43.13287963055556 -85.74667627777778 100
+mode circle
+mode guided 43.13309554166666 -85.74624790277777 100
+mode circle
+mode guided 43.13287963055556 -85.74620030555555 100
+mode circle
+mode guided 43.132731191666664 -85.74581000833334 100
+mode circle
+mode guided 43.132596247222224 -85.74296369444444 100
+mode circle
+mode guided 43.133014575 -85.74234493055556 100
+mode circle
+mode guided 43.13354085833333 -85.74191655555556 100
+mode circle
+mode guided 43.13292686111111 -85.74191655555556 100
+mode circle
+mode guided 43.13250853333333 -85.74044104166667 100
+mode circle
+mode rtl
 disarm
-``` 
-
-This plan ensures the quadcopter flies to each building, circles around it at a height of 100 meters, and then returns to the take-off point.
+```

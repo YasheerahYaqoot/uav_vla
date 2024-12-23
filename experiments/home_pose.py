@@ -37,7 +37,7 @@ def process_image_data(file_path, output_file):
             output.write(f"\nImage {current_image}:\n  Home Position:\n    Latitude = {new_lat}\n    Longitude = {new_long}\n")
 
 # File paths
-input_file = 'img_lat_long_data.txt'
+input_file = '../benchmark-UAV-VLPA-nano-30/img_lat_long_data.txt'
 output_file = 'home_position.txt'
 
 process_image_data(input_file, output_file)
