@@ -40,6 +40,7 @@ To install requirements, run
 ```
 pip -r requirements.txt
 ```
+!12GB VRAM minimum
 
 
 ## Mission generation
