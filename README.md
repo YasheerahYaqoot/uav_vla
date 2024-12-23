@@ -37,7 +37,10 @@ The benchmark is stored in the folder benchmark-UAV-VLPA-nano-30. There are imag
 
 To install requirements, run 
 
+```
 pip -r requirements.txt
+```
+
 
 ## Mission generation
 
