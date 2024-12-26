@@ -5,7 +5,7 @@ This repository contains the code, data, and instructions for the paper:
 
 ## Table of Contents
 1. [Abstract](#abstract)
-2. [Dataset](#dataset)
+2. [Benchmark](#benchmark)
 3. [Installation](#installation)
 4. [Mission Generation](#mission-generation)
 5. [Path-Plans Creation](#path-plan-creation)
@@ -28,19 +28,17 @@ This repository includes:
 - Dataset and benchmark details.
 - Code for simulation-based and real-world experiments.
 
-##Docker
+## Benchmark
+
+The images of the benchmark are stored in the folder ```benchmark-UAV-VLPA-nano-30/images```. The metadata files are ```benchmark-UAV-VLPA-nano-30/img_lat_long_data.txt``` and ```benchmark-UAV-VLPA-nano-30/parsed_coordinates.csv```.
+
+## Installation
 
 It is possible to run docker by
 
 ```
 docker run --gpus all -it <imagename>
 ```
-
-## Benchmark
-
-The benchmark is stored in the folder benchmark-UAV-VLPA-nano-30. There are images, .txt and .csv files.
-
-## Installation
 
 To install requirements, run 
 
@@ -75,7 +73,6 @@ Navigate into the folder ```experiments/```, run:
 ```
 python3 main.py
 ```
-
 
 ### What Happens When You run main.py:
 
