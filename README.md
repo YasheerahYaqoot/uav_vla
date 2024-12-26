@@ -69,7 +69,7 @@ python3 generate_plans.py
 Some examples of the path generated can be seen below:
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/386f7e78-83aa-4915-aa33-ec7fbdc6dd40" alt="examples_path_generated" width="500"/>
+  <img src="https://github.com/user-attachments/assets/386f7e78-83aa-4915-aa33-ec7fbdc6dd40" alt="examples_path_generated" width="600"/>
 </div>
 ## Experimental Results
 To view the experimental results, you need to run the main.py script. This script automates the entire process of generating coordinates, calculating trajectory lengths, and producing visualizations.
@@ -108,7 +108,7 @@ After running the script, you will be able to examine:
 ### Trajectory Bar Chart:
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/e27a0c86-e54a-433a-822c-dc68297fdd37" alt="traj_bar_chart" width="500"/>
+  <img src="https://github.com/user-attachments/assets/e27a0c86-e54a-433a-822c-dc68297fdd37" alt="traj_bar_chart" width="600"/>
 </div>
 
 ### Error Box Plot:
