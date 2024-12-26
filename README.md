@@ -64,6 +64,10 @@ To generate commands, run
 python3 generate_plans.py
 ```
 
+Some examples of the path generated can be seen below:
+
+![examples_path_generated](https://github.com/user-attachments/assets/386f7e78-83aa-4915-aa33-ec7fbdc6dd40)
+
 ## Experimental Results
 To view the experimental results, you need to run the main.py script. This script automates the entire process of generating coordinates, calculating trajectory lengths, and producing visualizations.
 
@@ -87,7 +91,7 @@ python3 main.py
 - Plot Results
 
 - Generate Identified Images:
-The script generates images by overlaying the VLM and MP coordinates on the original images from the dataset.
+The script generates images by overlaying the VLM and Mission Planner (human-generated) coordinates on the original images from the dataset.
 These identified images are saved in:
 identified_images_VLM (for VLM outputs).
 identified_images_mp (for Mission Planner outputs).
@@ -113,3 +117,9 @@ After running the script, you will be able to examine:
 |  1 | Mean     |     34.2218 |    307.265 |              409.538 |
 |  2 | Median   |     26.0456 |    318.462 |              395.593 |
 |  3 | Max      |    112.493  |    644.574 |              727.936 |
+
+## Simulation Video (Mission Planner Environment)
+
+The generated mission from the UAV-VLA framework was tested in the ArduPilot Mission Planner. The simulation can be seen below.
+
+
