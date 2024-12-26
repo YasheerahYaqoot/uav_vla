@@ -21,7 +21,7 @@ The combination of visual analysis by VLM and natural language processing by GPT
 
 ### UAV-VLA Framework
 
-<img src="https://github.com/user-attachments/assets/b2e92daf-b21b-47b8-ab38-3e20ac6b18e6" alt="UAV_VLA_Title_image" width="600"/>
+<img src="https://github.com/user-attachments/assets/b2e92daf-b21b-47b8-ab38-3e20ac6b18e6" alt="UAV_VLA_Title_image" width="400"/>
 
 This repository includes:
 - The implementation of the UAV-VLA framework.
@@ -66,7 +66,7 @@ python3 generate_plans.py
 
 Some examples of the path generated can be seen below:
 
-<img src="https://github.com/user-attachments/assets/386f7e78-83aa-4915-aa33-ec7fbdc6dd40" alt="examples_path_generated" width="600"/>
+<img src="https://github.com/user-attachments/assets/386f7e78-83aa-4915-aa33-ec7fbdc6dd40" alt="examples_path_generated" width="500"/>
 
 ## Experimental Results
 To view the experimental results, you need to run the main.py script. This script automates the entire process of generating coordinates, calculating trajectory lengths, and producing visualizations.
