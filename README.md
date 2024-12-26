@@ -71,6 +71,7 @@ Some examples of the path generated can be seen below:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/386f7e78-83aa-4915-aa33-ec7fbdc6dd40" alt="examples_path_generated" width="600"/>
 </div>
+
 ## Experimental Results
 
 To view the experimental results, you need to run the main.py script. This script automates the entire process of generating coordinates, calculating trajectory lengths, and producing visualizations.
