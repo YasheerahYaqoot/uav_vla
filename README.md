@@ -100,13 +100,18 @@ After running the script, you will be able to examine:
 - Images: Showing the identified coordinates overlaid on the images.
 - Plots: Comparing trajectory lengths and RMSE values.
 
-### Error Box Plot:
-
-![error_box_plot](https://github.com/user-attachments/assets/52f9afcf-ba3f-4cc2-bb37-bf48475a077b)
-
-
 ### Trajectory Bar Chart:
 
 ![traj_bar_chart](https://github.com/user-attachments/assets/e27a0c86-e54a-433a-822c-dc68297fdd37)
 
+### Error Box Plot:
 
+![error_box_plot](https://github.com/user-attachments/assets/52f9afcf-ba3f-4cc2-bb37-bf48475a077b)
+
+### Error Comparison Table:
+
+|    | Metric   |   KNN Error |   DTW RMSE |   Interpolation RMSE |
+|----|----------|-------------|------------|----------------------|
+|  1 | Mean     |     34.2218 |    307.265 |              409.538 |
+|  2 | Median   |     26.0456 |    318.462 |              395.593 |
+|  3 | Max      |    112.493  |    644.574 |              727.936 |
