@@ -21,7 +21,7 @@ The combination of visual analysis by VLM and natural language processing by GPT
 
 ### UAV-VLA Framework
 
-![UAV_VLA_Title_image](https://github.com/user-attachments/assets/b2e92daf-b21b-47b8-ab38-3e20ac6b18e6)
+<img src="https://github.com/user-attachments/assets/b2e92daf-b21b-47b8-ab38-3e20ac6b18e6" alt="UAV_VLA_Title_image" width="600"/>
 
 This repository includes:
 - The implementation of the UAV-VLA framework.
@@ -66,7 +66,7 @@ python3 generate_plans.py
 
 Some examples of the path generated can be seen below:
 
-![examples_path_generated](https://github.com/user-attachments/assets/386f7e78-83aa-4915-aa33-ec7fbdc6dd40)
+<img src="https://github.com/user-attachments/assets/386f7e78-83aa-4915-aa33-ec7fbdc6dd40" alt="examples_path_generated" width="600"/>
 
 ## Experimental Results
 To view the experimental results, you need to run the main.py script. This script automates the entire process of generating coordinates, calculating trajectory lengths, and producing visualizations.
@@ -104,11 +104,11 @@ After running the script, you will be able to examine:
 
 ### Trajectory Bar Chart:
 
-![traj_bar_chart](https://github.com/user-attachments/assets/e27a0c86-e54a-433a-822c-dc68297fdd37)
+<img src="https://github.com/user-attachments/assets/e27a0c86-e54a-433a-822c-dc68297fdd37" alt="traj_bar_chart" width="500"/>
 
 ### Error Box Plot:
 
-![error_box_plot](https://github.com/user-attachments/assets/52f9afcf-ba3f-4cc2-bb37-bf48475a077b)
+<img src="https://github.com/user-attachments/assets/52f9afcf-ba3f-4cc2-bb37-bf48475a077b" alt="error_box_plot" width="500"/>
 
 ### Error Comparison Table:
 
