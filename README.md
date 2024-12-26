@@ -67,8 +67,6 @@ python3 generate_plans.py
 ## Experimental Results
 To view the experimental results, you need to run the main.py script. This script automates the entire process of generating coordinates, calculating trajectory lengths, and producing visualizations.
 
-How to View the Results:
-Ensure that your system has at least 12GB of VRAM, as the experiment requires significant graphical resources.
 Navigate into the folder ```experiments/```, run:
 ```
 python3 main.py
