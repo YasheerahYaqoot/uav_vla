@@ -1,4 +1,3 @@
-This repository contains the code, data, and instructions for the paper:  
 # "UAV-VLA: Vision-Language-Action System for Large Scale Aerial Mission Generation"
 
 ---
