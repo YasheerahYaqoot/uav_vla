@@ -119,14 +119,19 @@ After running the script, you will be able to examine:
 
 ### Error Comparison Table:
 
+<div align="center">
+
 |    | Metric   |   KNN Error |   DTW RMSE |   Interpolation RMSE |
 |----|----------|-------------|------------|----------------------|
 |  1 | Mean     |     34.2218 |    307.265 |              409.538 |
 |  2 | Median   |     26.0456 |    318.462 |              395.593 |
 |  3 | Max      |    112.493  |    644.574 |              727.936 |
 
+</div>
+
 ## Simulation Video (Mission Planner Environment)
 
 The generated mission from the UAV-VLA framework was tested in the ArduPilot Mission Planner. The simulation can be seen below.
 
+https://github.com/user-attachments/assets/129cf303-fb39-4dc9-a047-b6b3ea38ada5
 
