@@ -28,7 +28,7 @@ The combination of visual analysis by VLM and natural language processing by GPT
 This repository includes:
 - The implementation of the UAV-VLA framework.
 - Dataset and benchmark details.
-- Code for simulation-based and real-world experiments.
+- Code for simulation-based experiments in Mission Planner.
 
 ## Benchmark
 
