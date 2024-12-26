@@ -63,7 +63,7 @@ It will produce the commands to /created_missions and visualizations to the /ide
 
 To generate commands, run
 ```
-python3 generate_plans.py
+python3 run_vlm.py
 ```
 
 Some examples of the path generated can be seen below:
