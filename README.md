@@ -138,7 +138,6 @@ The generated mission from the UAV-VLA framework was tested in the ArduPilot Mis
 <div style="text-align: center;">
   <video width="80%" height="auto" controls loop>
     <source src="https://github.com/user-attachments/assets/562f2ee7-13e5-44a0-bb0f-6c109a958123" type="video/mp4">
-    Your browser does not support the video tag.
   </video>
 </div>
 
