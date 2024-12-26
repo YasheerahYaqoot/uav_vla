@@ -18,16 +18,17 @@ By integrating satellite imagery processing with the Visual Language Model (VLM)
 This system leverages the rich contextual information provided by satellite images, allowing for enhanced decision-making and mission planning. 
 The combination of visual analysis by VLM and natural language processing by GPT can provide the user with the path-and-action set, making aerial operations more efficient and accessible. The newly developed method showed the difference in the length of the created trajectory in 22\% and the mean error in finding the objects of interest on a map in 34.22 m by Euclidean distance in the K-Nearest Neighbors (KNN) approach.
 
-### UAV-VLA Framework
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/b2e92daf-b21b-47b8-ab38-3e20ac6b18e6" alt="UAV_VLA_Title_image" width="400"/>
-</div>
 
 This repository includes:
 - The implementation of the UAV-VLA framework.
 - Dataset and benchmark details.
 - Code for simulation-based experiments in Mission Planner.
+
+### UAV-VLA Framework
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/b2e92daf-b21b-47b8-ab38-3e20ac6b18e6" alt="UAV_VLA_Title_image" width="400"/>
+</div>
 
 ## Benchmark
 
