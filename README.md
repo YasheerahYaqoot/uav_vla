@@ -133,11 +133,11 @@ After running the script, you will be able to examine:
 
 The generated mission from the UAV-VLA framework was tested in the ArduPilot Mission Planner. The simulation can be seen below.
 
-https://github.com/user-attachments/assets/562f2ee7-13e5-44a0-bb0f-6c109a958123
+
 
 <div style="text-align: center;">
   <video width="80%" height="auto" controls loop>
-    <source src="[https://github.com/user-attachments/assets/129cf303-fb39-4dc9-a047-b6b3ea38ada5](https://github.com/user-attachments/assets/562f2ee7-13e5-44a0-bb0f-6c109a958123)" type="video/mp4">
+    <source src="https://github.com/user-attachments/assets/562f2ee7-13e5-44a0-bb0f-6c109a958123" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
