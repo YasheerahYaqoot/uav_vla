@@ -19,7 +19,8 @@ processor = AutoProcessor.from_pretrained(
     device_map='auto'
 )
 
-print('here1')
+#print('here1')
+
 # load the model
 model = AutoModelForCausalLM.from_pretrained(
     'cyan2k/molmo-7B-O-bnb-4bit',
@@ -28,7 +29,8 @@ model = AutoModelForCausalLM.from_pretrained(
     device_map='auto'
 )
 
-print('here2')
+# print('here2')
+
 # process the image and text
 # inputs = processor.process(
 #     images=[Image.open(requests.get("https://www.zerogravity.fi/wp-content/uploads/2019/11/satellite-data-e1572891876593-621x556.jpg", stream=True).raw)],
@@ -82,27 +84,4 @@ with open('identified_points.txt', 'w') as f:
 
         f.write(str(i) + ', ' + generated_text + '\n')
         
-        # LIST_OF_ANSWERS.append(generated_text)
-        
-        # # LIST_OF_ANSWERS.append('/n')
-
-        # f.writelines(LIST_OF_ANSWERS)
-        # # f.writelines(generated_text)
-        # f.write('\n')
-        # f.close()
-        
 f.close()
-    
-
-
-    # for line in LIST_OF_ANSWERS:
-    #     f.write(line)
-    #     f.write('\n')
-    
-
-# with open('Answers.txt', 'w') as f:
-#     # f.write(str(LIST_OF_ANSWERS))
-
-#     for line in LIST_OF_ANSWERS:
-#         f.write(line)
-#         f.write('\n')
