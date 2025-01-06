@@ -46,7 +46,7 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 
 
-llm = ChatOpenAI(api_key='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', model_name='gpt-4o', temperature=0)
+llm = ChatOpenAI(api_key='', model_name='gpt-4o', temperature=0)
 
 # 1. Step 1: Extract object types from the user's input command using the LLM
 
