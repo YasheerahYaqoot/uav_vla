@@ -61,7 +61,7 @@ It will produce the commands and store the text files in the folder ```/created_
 
 ## Path-Plans Creation
 
-To generate commands, run
+To see the results of VLM on the benchmark, run
 ```
 python3 run_vlm.py
 ```
