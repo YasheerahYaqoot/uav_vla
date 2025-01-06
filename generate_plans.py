@@ -46,7 +46,7 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 
 
-llm = ChatOpenAI(api_key='', model_name='gpt-4o', temperature=0)
+llm = ChatOpenAI(api_key='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', model_name='gpt-4o', temperature=0)
 
 # 1. Step 1: Extract object types from the user's input command using the LLM
 
@@ -102,10 +102,10 @@ def find_objects(json_input, example_objects):
 
     for i in range(1, NUMBER_OF_SAMPLES):
         print(i)
-        string = '/updated_dataset/' + str(i) + '.jpg' 
+        string = 'benchmark-UAV-VLPA-nano-30/images/' + str(i) + '.jpg' 
     #process the image and text
         inputs = processor.process(
-            images=[Image.open('updated_dataset/' + str(i) + '.jpg')],
+            images=[Image.open('benchmark-UAV-VLPA-nano-30/images/' + str(i) + '.jpg')],
             text=f'''
             This is the satellite image of a city. Please, point all the next objects: {sample} 
             '''
@@ -145,7 +145,7 @@ def find_objects(json_input, example_objects):
         coordinates_dict = read_coordinates_from_csv(csv_file_path)
 
         result_coordinates = recalculate_coordinates(parsed_points, image_number, coordinates_dict)
-        draw_dots_and_lines_on_image(f'updated_dataset/{i}.jpg', parsed_points, output_path=f'identified_new_data/identified{i}.jpg')
+        draw_dots_and_lines_on_image(f'benchmark-UAV-VLPA-nano-30/images/{i}.jpg', parsed_points, output_path=f'identified_new_data/identified{i}.jpg')
 
         print(result_coordinates)
 
