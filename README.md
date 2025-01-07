@@ -121,13 +121,15 @@ After running the script, you will be able to examine:
 
 ### Error Comparison Table:
 
+The errors were calculated using different approaches including K-Nearest Neighbor (KNN), Dynamic Time Warping (DTW), and Linear Interpolation.
+
 <div align="center">
 
-|    | Metric   |   KNN Error |   DTW RMSE |   Interpolation RMSE |
-|----|----------|-------------|------------|----------------------|
-|  1 | Mean     |     34.2218 |    307.265 |              409.538 |
-|  2 | Median   |     26.0456 |    318.462 |              395.593 |
-|  3 | Max      |    112.493  |    644.574 |              727.936 |
+|    | Metric   |   KNN Error (m) |   DTW RMSE (m) |   Interpolation RMSE (m) |
+|----|----------|-----------------|----------------|--------------------------|
+|  1 | Mean     |     34.2218     |    307.265     |              409.538     |
+|  2 | Median   |     26.0456     |    318.462     |              395.593     |
+|  3 | Max      |    112.493      |    644.574     |              727.936     |
 
 </div>
 
