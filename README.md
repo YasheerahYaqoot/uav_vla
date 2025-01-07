@@ -97,9 +97,7 @@ python3 main.py
 
 - Generate Identified Images:
 The script generates images by overlaying the VLM and Mission Planner (human-generated) coordinates on the original images from the dataset.
-These identified images are saved in:
-identified_images_VLM (for VLM outputs).
-identified_images_mp (for Mission Planner outputs).
+These identified images are saved in ```identified_images_VLM/``` (for VLM outputs) and ```identified_images_mp/``` (for Mission Planner outputs).
 
 After running the script, you will be able to examine:
 
