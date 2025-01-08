@@ -11,6 +11,7 @@ import csv
 from parser_for_coordinates import parse_points
 from draw_circles import draw_dots_and_lines_on_image
 from recalculate_to_latlon import recalculate_coordinates, percentage_to_lat_lon, read_coordinates_from_csv
+from time import time
 
 #os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 
@@ -25,8 +26,7 @@ print(torch.cuda.is_available())
 
 LIST_OF_ANSWERS = []
 
-NUMBER_OF_SAMPLES = 31 #len(os.listdir('/VLM_Drone/dataset_images'))
-NUMBER_OF_SAMPLES -=1
+NUMBER_OF_SAMPLES = 30 #len(os.listdir('/VLM_Drone/dataset_images'))
 print('NUMBER_OF_SAMPLES',NUMBER_OF_SAMPLES )
 
 # load the processor
@@ -100,7 +100,7 @@ def find_objects(json_input, example_objects):
     print('The sample is', sample)
     print('\n')
 
-    for i in range(1, NUMBER_OF_SAMPLES):
+    for i in range(1, NUMBER_OF_SAMPLES+1):
         print(i)
         string = 'benchmark-UAV-VLPA-nano-30/images/' + str(i) + '.jpg' 
     #process the image and text
@@ -206,29 +206,45 @@ def generate_drone_mission(command):
     object_types_json = object_types_response.content  # Use 'content' to get the actual response text
 
     # Step 2: Find objects on the map (dummy example for now)
+    t1_find_objects = time()
     objects_json, list_of_the_resulted_coordinates_percentage, list_of_the_resulted_coordinates_lat_lon = find_objects(object_types_json, example_objects)
+    t2_find_objects = time()
+
+    del_t_find_objects = (t2_find_objects - t1_find_objects)/60
+
+    print('length: ', len(list_of_the_resulted_coordinates_lat_lon))
 
 
     #print('objects_json =', objects_json)
 
     
     # Step 3: Generate the flight plan
+    t1_generate_drone_mission = time()
 
     for i in range(1,len(list_of_the_resulted_coordinates_lat_lon)+1): 
-        flight_plan_response = step_3_chain.invoke({"command": command, "objects": list_of_the_resulted_coordinates_lat_lon[i]})
+        flight_plan_response = step_3_chain.invoke({"command": command, "objects": list_of_the_resulted_coordinates_lat_lon[i-1]})
     #print('flight_plan_response = ', flight_plan_response)
         with open(f"created_missions/mission{i}.txt","w") as file:   
             file.write(str(flight_plan_response.content))
 
         print(flight_plan_response.content)
 
+    t2_generate_drone_mission = time()
+    del_t_generate_drone_mission = (t2_generate_drone_mission - t1_generate_drone_mission)/60
 
 
-    return flight_plan_response.content  # Return the response text from AIMessage
+    return flight_plan_response.content, del_t_find_objects, del_t_generate_drone_mission  # Return the response text from AIMessage
 
 # Example usage
 command = """Create a flight plan for the quadcopter to fly around each of the building at the height 100m return to home and land at the take-off point."""
 
 
 # Run the full pipeline
-flight_plan = generate_drone_mission(command)
+
+flight_plan, vlm_model_time, mission_generation_time = generate_drone_mission(command)
+
+
+# Evaluation time
+print('-------------------------------------------------------------------')
+print('Time to get VLM results: ', vlm_model_time, 'mins')
+print('Time to get Mission Text files: ', mission_generation_time, 'mins')
