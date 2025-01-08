@@ -58,6 +58,7 @@ python3 generate_plans.py
 ```
 It will produce the commands and store the text files in the folder ```/created_missions``` and visualizations of the identified points on the benchmark images in the folder ```/identified_new_data```.
 
+As a result of this script, you will also find the total computational time time of the UAV-VLA system which is approximately **5.4 mins**.
 
 ## Path-Plans Creation
 
