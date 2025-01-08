@@ -242,9 +242,10 @@ command = """Create a flight plan for the quadcopter to fly around each of the b
 # Run the full pipeline
 
 flight_plan, vlm_model_time, mission_generation_time = generate_drone_mission(command)
-
+total_computational_time = vlm_model_time + mission_generation_time
 
 # Evaluation time
 print('-------------------------------------------------------------------')
 print('Time to get VLM results: ', vlm_model_time, 'mins')
 print('Time to get Mission Text files: ', mission_generation_time, 'mins')
+print('Total Computational Time: ', total_computational_time, 'mins')
