@@ -53,7 +53,7 @@ pip -r requirements.txt
 
 ## Mission generation
 
-To generate commands for UAV, run
+To generate commands for UAV add your API key in ```generate_plans.py``` (line 49), then run
 ```
 python3 generate_plans.py
 ```
