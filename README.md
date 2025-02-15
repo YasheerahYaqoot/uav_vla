@@ -46,7 +46,7 @@ docker run --gpus all -it <imagename>
 To install requirements, run 
 
 ```
-pip -r requirements.txt
+pip install -r requirements.txt
 ```
 !12GB VRAM minimum
 
