@@ -123,7 +123,7 @@ The errors were calculated using different approaches including K-Nearest Neighb
 |----|----------|-----------------|----------------|--------------------------|
 |  1 | Mean     |     34.2218     |    307.265     |              409.538     |
 |  2 | Median   |     26.0456     |    318.462     |              395.593     |
-|  3 | Max      |    112.493      |    644.574     |              727.936     |
+|  3 | Max      |     112.493     |    644.574     |              727.936     |
 
 </div>
 
@@ -150,13 +150,13 @@ After running the script, you will be able to examine:
 #### Trajectory Bar Chart:
 
 <div align="center">
-  <img width="1200" height="600" alt="traj_bar_chart" src="https://github.com/user-attachments/assets/b2da3155-1820-4444-a0c8-7c909ea3afff" />
+  <img width="600" height="600" alt="traj_bar_chart" src="https://github.com/user-attachments/assets/b2da3155-1820-4444-a0c8-7c909ea3afff" />
 </div>
 
 #### Error Box Plot:
 
 <div align="center">
-  <img width="800" height="600" alt="error_box_plot" src="https://github.com/user-attachments/assets/15ef036f-0803-4d31-991c-8a4330118927" />
+  <img width="500" height="600" alt="error_box_plot" src="https://github.com/user-attachments/assets/15ef036f-0803-4d31-991c-8a4330118927" />
 </div>
 
 
@@ -168,9 +168,9 @@ The errors were calculated using different approaches including K-Nearest Neighb
 
 |    | Metric   |   KNN Error (m) |   DTW RMSE (m) |   Interpolation RMSE (m) |
 |----|----------|-----------------|----------------|--------------------------|
-|  1 | Mean     |     34.2218     |    307.265     |              409.538     |
-|  2 | Median   |     26.0456     |    318.462     |              395.593     |
-|  3 | Max      |    112.493      |    644.574     |              727.936     |
+|  1 | Mean     |     45.16       |    259.07      |              354.46      |
+|  2 | Median   |     26.89       |    235.48      |              308.91      |
+|  3 | Max      |    336.22       |   719.48       |              734.32      |
 
 </div>
 
