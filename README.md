@@ -17,6 +17,6 @@ The framework has been validated in two ways:
 
 - **Real-World Experiments**  
 The framework was also validated through **controlled real-world field experiments with drones**, demonstrating the feasibility of autonomous mission execution in practical environments.  
-The implementation and experimental setup can be found in ```implementation/```/
+The implementation and experimental setup can be found in ```implementation/```.
 
 
